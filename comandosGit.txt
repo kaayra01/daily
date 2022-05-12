@@ -10,4 +10,8 @@ Reverter commit
 	git revert commit
 
 Alteração local
+<<<<<<< HEAD
 ou outra alteração
+=======
+Alteração manual no github
+>>>>>>> 0c68f1e7b3954fa15f273330bd9d604aabbe139a
