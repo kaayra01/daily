@@ -9,5 +9,4 @@ Descartar todas as alterações do HEAD
 Reverter commit
 	git revert commit
 
-Alteração local
 Alteração manual no github
