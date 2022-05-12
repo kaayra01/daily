@@ -10,3 +10,4 @@ Reverter commit
 	git revert commit
 
 Alteração local
+ou outra alteração
