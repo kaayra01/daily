@@ -1,0 +1,12 @@
+git merge <nome_branch>
+
+Combinar seu HEAD atual na sua branch
+	git rebase branch
+
+Descartar todas as alterações do HEAD
+	git reset --hard HEAD
+
+Reverter commit
+	git revert commit
+
+Alteração local
