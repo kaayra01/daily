@@ -5,20 +5,17 @@ let seg = date.getSeconds();
 
 let horMinSeg = hora + ':' + min + ':' + seg;
 
-let validar = hora >=0 && hora < 24;
-
 let msg = document.getElementById("msg");
 let mensagem;
 
 if (hora <= 6) {
-	mensagem = "É madrugada!";
+	mensagem = "Ainda é madrugada!";
 } else if (hora <= 12){
-	mensagem = "Tá de dia! Bom dia";
+	mensagem = "Amanheceu, bom dia!";
 } else if (hora <= 18){
-	mensagem = "Entardeceu! Boa tarde!";
+	mensagem = "Entardeceu, boa tarde!";
 } else {
 	mensagem = "Boa noitinha!";
 }
-
 
 msg.innerText = horMinSeg + " => "+ mensagem;
