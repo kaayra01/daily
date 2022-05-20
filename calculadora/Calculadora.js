@@ -13,7 +13,7 @@ export default class Calculadora {
     }
 
     static div(a, b) {
-        let c;
+        let c
         if (b == 0) {
             c = "Não é possível dividir um número por 0"
         } else {
@@ -24,6 +24,11 @@ export default class Calculadora {
 
     static exponencial(a, b) {
         return a ** b
+    }
+    
+    static media(a, b){
+
+        return (a + b) / 2
     }
 
     static parimpar(a) {
@@ -106,7 +111,6 @@ export default class Calculadora {
     }
 
     static areaCirculo(a) {
-        // a = pi * (r**2)
         const pi = 3.14
         let b
 
@@ -122,7 +126,6 @@ export default class Calculadora {
     }
 
     static areaTrapezio(a, b, c) {
-        // a = ((B + b ) * h) / 2
         let d
 
         if ((a < 0) || (b < 0) || (c < 0)) {
@@ -137,7 +140,6 @@ export default class Calculadora {
     }
 
     static areaLosango(a, b) {
-        // a = (D * d) / 2
         let c
 
         if ((a < 0) || (b < 0)) {
