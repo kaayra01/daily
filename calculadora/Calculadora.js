@@ -25,10 +25,31 @@ export default class Calculadora {
     static exponencial(a, b) {
         return a ** b
     }
-    
-    static media(a, b){
+
+    static media(a, b) {
 
         return (a + b) / 2
+    }
+
+
+    static mediaMais(n) {
+
+        mediaMaior()
+        function mediaMaior() {
+
+        }
+    }
+
+    static raizQuadrada(a) {
+        let b = 0
+        let c
+        if (a < 0) {
+            c = "Não é possível calcular com número negativo"
+        } else {
+            c = parseFloat((Math.sqrt(a)).toFixed(2))
+        }
+
+        return c
     }
 
     static parimpar(a) {
@@ -156,19 +177,21 @@ export default class Calculadora {
 
     static fatorial(a) {
         let b = 0
-        let c = 0
 
         if (a < 0) {
-            c = "Não é possível calcular com número negativo"
+            b = "Não é possível calcular com número negativo"
         } else {
-            c = 1
-            while (b < a) {
-                
-                b++
+            b = a
+            for (let i = 1; i < a; i++) {
+                b *= i
             }
         }
 
-        return c
+        if (typeof(b) == 'undefined'){
+            b = 0
+        }
+
+        return b
     }
 
     static anoIdade(a) {
